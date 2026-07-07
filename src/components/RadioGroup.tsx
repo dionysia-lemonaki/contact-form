@@ -26,7 +26,10 @@ const RadioGroup = ({
   const id = useId();
   return (
     <fieldset aria-describedby={error ? id : undefined}>
-      <legend>{legend}</legend>
+      <legend>
+        <span>{legend}</span>
+        <span>*</span>
+      </legend>
       <div>
         {queryTypes.map((queryType) => (
           <RadioGroupItem

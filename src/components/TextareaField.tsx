@@ -19,7 +19,10 @@ const TextareaField = ({
   const errorId = `${id}-error`;
   return (
     <div>
-      <label htmlFor={id}>{label}</label>
+      <label htmlFor={id}>
+        <span>{label} </span>
+        <span>*</span>
+      </label>
       <textarea
         id={id}
         {...register(name)}
