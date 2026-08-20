@@ -28,6 +28,7 @@ export default function TextAreaField({
       <textarea
         id={inputId}
         aria-describedby={error ? errorId : undefined}
+        aria-invalid={!!error}
         {...register(name)}
       ></textarea>
       {error && (
