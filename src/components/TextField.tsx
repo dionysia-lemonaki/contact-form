@@ -18,17 +18,17 @@ export default function TextField({
   error,
 }: TextFieldProps) {
   const baseId = useId();
-  const labelId = `${baseId}-label`;
+  const inputId = `${baseId}-input`;
   const errorId = `${baseId}-error`;
   return (
     <div>
-      <label htmlFor={labelId}>
+      <label htmlFor={inputId}>
         <span>{label}</span>
         <span aria-hidden={true}>*</span>
         <span className="sr-only">(required)</span>
       </label>
       <input
-        id={labelId}
+        id={inputId}
         type={type}
         {...register(name)}
         aria-describedby={error ? errorId : undefined}
