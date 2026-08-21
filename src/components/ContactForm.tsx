@@ -9,7 +9,7 @@ import RadioGroup from "./RadioGroup";
 import TextAreaField from "./TextAreaField";
 import CheckBox from "./CheckBox";
 
-export default function ContactForm() {
+export default function ContactForm({ onSuccess }: { onSuccess: () => void }) {
   const {
     register,
     handleSubmit,
@@ -19,8 +19,8 @@ export default function ContactForm() {
     resolver: zodResolver(contactFormSchema),
   });
 
-  const onSubmit: SubmitHandler<ContactFormData> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<ContactFormData> = () => {
+    onSuccess();
     reset();
   };
 
