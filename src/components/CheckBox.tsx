@@ -27,7 +27,7 @@ export default function CheckBox({
           {...register(name)}
           aria-describedby={error ? errorId : undefined}
           aria-invalid={!!error}
-          className="accent-green-600"
+          className="accent-green-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
         />
         <div>
           <label htmlFor={inputId}>
