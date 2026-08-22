@@ -31,9 +31,11 @@ export default function CheckBox({
         />
         <div>
           <label htmlFor={inputId} className="flex items-center gap-1">
-            <span className="text-base font-normal leading-6">{label}</span>
-            <span aria-hidden={true} className="text-green-600">
-              *
+            <span className="text-base font-normal leading-6">
+              {label}{" "}
+              <span aria-hidden={true} className="text-green-600">
+                *
+              </span>
             </span>
             <span className="sr-only">(required)</span>
           </label>
