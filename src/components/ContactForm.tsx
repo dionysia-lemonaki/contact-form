@@ -71,7 +71,12 @@ export default function ContactForm({ onSuccess }: { onSuccess: () => void }) {
         register={register}
         error={errors.consent?.message}
       />
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        className="bg-green-600 text-white w-full py-4 px-10 rounded-lg cursor-pointer text-lg font-bold leading-6 hover:bg-grey-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+      >
+        Submit
+      </button>
     </form>
   );
 }
