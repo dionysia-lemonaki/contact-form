@@ -30,7 +30,7 @@ export default function CheckBox({
           className="accent-green-600"
         />
         <div>
-          <label htmlFor={inputId} className="flex items-center gap-1">
+          <label htmlFor={inputId}>
             <span className="text-base font-normal leading-6">
               {label}{" "}
               <span aria-hidden={true} className="text-green-600">
