@@ -26,7 +26,7 @@ export default function ContactForm({ onSuccess }: { onSuccess: () => void }) {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate>
-      <div>
+      <div className="grid md:grid-cols-2 md:gap-4">
         <TextField
           label="First Name"
           type="text"

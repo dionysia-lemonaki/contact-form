@@ -10,10 +10,13 @@
 
 @theme {
   --color-green-200: hsl(148 38% 91%);
-  --color-gray-900: hsl(187 24% 22%);
+  --color-green-600: hsl(169 82% 27%);
+  --color-grey-500: hsl(186 15% 59%);
+  --color-grey-900: hsl(187 24% 22%);
+  --color-red: hsl(0 66% 54%);
   --font-karla: "Karla", sans-serif;
 }
 
 body {
-  @apply bg-green-200 font-karla text-gray-900;
+  @apply bg-green-200 font-karla text-grey-900;
 }
